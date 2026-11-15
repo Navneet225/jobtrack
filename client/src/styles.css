@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fa; color: #1c2430; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px; }
+header, footer { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; }
+.card { background: #fff; border-radius: 10px; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.auth { max-width: 360px; margin: 80px auto; display: flex; flex-direction: column; gap: 10px; }
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 14px; }
+.stats .card { display: flex; flex-direction: column; align-items: center; }
+.stats b { font-size: 22px; }
+.add { display: grid; grid-template-columns: 1fr 1fr 130px 150px auto; gap: 8px; margin-bottom: 14px; }
+.filters { display: flex; gap: 8px; margin-bottom: 10px; }
+.filters input { flex: 1; }
+input, select { padding: 8px; border: 1px solid #cfd6e2; border-radius: 6px; font: inherit; }
+button { padding: 8px 14px; border: 0; border-radius: 6px; background: #2e5c8a; color: #fff; font: inherit; cursor: pointer; }
+button:disabled { opacity: .4; cursor: default; }
+button.link { background: none; color: #2e5c8a; padding: 4px; }
+button.danger { color: #b3261e; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eef1f6; }
+.muted { color: #6b7686; }
+.error { color: #b3261e; margin: 0; }
+@media (max-width: 640px) { .add { grid-template-columns: 1fr; } .stats { grid-template-columns: repeat(2, 1fr); } }
